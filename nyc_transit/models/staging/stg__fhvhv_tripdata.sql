@@ -4,7 +4,7 @@ with source as (
 
 ),
 
-renamed as (
+final as (
 
     select
         hvfhs_license_num,
@@ -37,4 +37,4 @@ renamed as (
 
 )
 
-select * from renamed
+select * from final

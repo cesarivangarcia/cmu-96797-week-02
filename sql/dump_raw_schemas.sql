@@ -8,3 +8,5 @@ DESCRIBE "fhv_tripdata";
 DESCRIBE "fhvhv_tripdata";
 DESCRIBE "green_tripdata";
 DESCRIBE "yellow_tripdata";
+
+select count(*) from "bike_data"

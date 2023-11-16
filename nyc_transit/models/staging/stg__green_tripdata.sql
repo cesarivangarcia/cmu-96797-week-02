@@ -4,7 +4,7 @@ with source as (
 
 ),
 
-renamed as (
+final as (
 
     select
         vendorid,
@@ -34,4 +34,4 @@ renamed as (
         AND trip_distance >= 0 -- drop negative trip_distance
 )
 
-select * from renamed
+select * from final

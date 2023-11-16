@@ -9,4 +9,4 @@ create table fhvhv_tripdata as select * from read_parquet('./data/taxi/fhvhv_tri
 create table fhv_tripdata as select * from read_parquet('./data/taxi/fhv_tripdata.parquet', union_by_name=True, filename=True);
 
 -- load bike data from CSV files, merging columns by name and storing as strings
-create table bike_data as select * from read_csv_auto('./data/citibike-tripdata.csv.gz', union_by_name=True, filename=True, all_varchar=1);
+create table bike_data as select * from read_csv_auto('./data/citibike-tripdata.csv/citibike-tripdata.csv', union_by_name=True, filename=True, all_varchar=1);

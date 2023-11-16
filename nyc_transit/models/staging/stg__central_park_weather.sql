@@ -4,7 +4,7 @@ with source as (
 
 ),
 
-renamed as (
+final as (
 
     select
         station,
@@ -31,4 +31,4 @@ select
     tmax,
     tmin,
     filename
-from renamed
+from final

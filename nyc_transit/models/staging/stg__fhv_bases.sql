@@ -4,7 +4,7 @@ with source as (
 
 ),
 
-renamed as (
+final as (
 
     select
         -- clean up the base_num to be properly linked as foreign keys
@@ -18,4 +18,4 @@ renamed as (
 
 )
 
-select * from renamed
+select * from final

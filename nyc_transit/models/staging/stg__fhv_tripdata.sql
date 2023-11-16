@@ -4,7 +4,7 @@ with source as (
 
 ),
 
-renamed as (
+final as (
 
     select
         trim(upper(dispatching_base_num)) as  dispatching_base_num, --some ids are lowercase
@@ -20,4 +20,4 @@ renamed as (
 
 )
 
-select * from renamed
+select * from final
